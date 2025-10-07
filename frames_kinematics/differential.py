@@ -45,9 +45,9 @@ class DiffDriveTF(Node):
         self.omega = msg.angular.z
 
     def update(self):
-        # Differential drive kinematics
-        v_l = self.v - (self.track / 2.0) * self.omega
-        v_r = self.v + (self.track / 2.0) * self.omega
+        # todo
+        v_l = 
+        v_r = 
 
         # Integrate pose
         self.x += self.v * math.cos(self.yaw) * self.dt
@@ -68,8 +68,9 @@ class DiffDriveTF(Node):
         self.br.sendTransform(t)
 
         # --- left & right wheels ---
-        w_l = v_l / self.r
-        w_r = v_r / self.r
+        # todo
+        w_l =
+        w_r =
         self.theta_l += w_l * self.dt
         self.theta_r += w_r * self.dt
 

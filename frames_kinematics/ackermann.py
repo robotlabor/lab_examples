@@ -45,8 +45,9 @@ class AckermannTF(Node):
     def update(self):
         # kinematics
         if abs(self.delta) > 1e-3:
-            R = self.L / math.tan(self.delta)
-            omega = self.v / R
+            # todo
+            R = 
+            omega = 
         else:
             R, omega = float('inf'), 0.0
 
@@ -99,10 +100,12 @@ class AckermannTF(Node):
         else:
             v_left = v_right = self.v
 
-        w_left = v_left / self.r
-        w_right = v_right / self.r
-        self.theta_fl += w_left * self.dt
-        self.theta_fr += w_right * self.dt
+        # todo
+
+        w_left =
+        w_right =
+        self.theta_fl +=
+        self.theta_fr +=
 
         for name, yoff, theta in [
             ('front_left_wheel',  self.track/2, self.theta_fl),
